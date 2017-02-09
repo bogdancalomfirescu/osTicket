@@ -39,10 +39,10 @@ define('ADMIN_EMAIL','%ADMIN-EMAIL');
 # ---------------------------------------------------
 # Mysql Login info
 define('DBTYPE','mysql');
-define('DBHOST','%CONFIG-DBHOST');
-define('DBNAME','%CONFIG-DBNAME');
-define('DBUSER','%CONFIG-DBUSER');
-define('DBPASS','%CONFIG-DBPASS');
+define('DBHOST',getenv('MYSQL_SERVICE'));
+define('DBNAME',getenv('MYSQL_DATABASE'));
+define('DBUSER',getenv('MYSQL_USER'));
+define('DBPASS',getenv('MYSQL_PASSWORD'));
 
 # Table prefix
 define('TABLE_PREFIX','%CONFIG-PREFIX');
